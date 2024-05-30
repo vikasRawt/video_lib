@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './reducers';
+import videoReducer from './videoSlice';
 
 const store = configureStore({
-    reducer : rootReducer,
+  reducer: {
+    video: videoReducer
+  }
 });
 
 export default store;

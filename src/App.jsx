@@ -1,16 +1,16 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './store';
-import VideosLibrary from './components/VideosLibrary.jsx';
+import store from './Redux/store.js';
+import VideoLibrary from './Redux/components/videoLib.jsx';
 
-const App = () => {
+function App() {
   return (
-    <Provider store={store}>
-      <div>
-        <VideosLibrary/>
+    <Provider store = {store}>
+      <div className="App">
+        <VideoLibrary/>
       </div>
     </Provider>
   );
-};
+}
 
 export default App;
